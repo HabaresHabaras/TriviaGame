@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body background="assets/img/spaceMainPicture.jpg">
+
+        <div id="pageStart">
+        <h1 class="firstContent">Space Trivia</h1>
+        <input class="firstContent"id="StartButton" type="button" value="Start" onclick="countdown_init()"/>
+        </div>
+        
+    
+
+<div id="superTrivia" class="container" style="display:none;">
+    <div class="title">Space Quiz</div>
+    <div id="question" class="question"></div>
+ 
+      <div class="countdown_text"></div>   
+
+<label class="option"><input type="radio" name="option" value="1"><span id="opt1"></span></label>
+<label class="option"><input type="radio" name="option" value="2"><span id="opt2"></span></label>
+<label class="option"><input type="radio" name="option" value="3"><span id="opt3"></span></label>
+<label class="option"><input type="radio" name="option" value="4"><span id="opt4"></span></label>
+<button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Next Question</button>
+        </div>
+<div id="result" class="container result" style="display:none;">
+</div>
+<div id="underResult" style="display:none;"> 
+        <p id = "answerQ">  Which planet is covered by clouds of sulphuric acid?</p><p id ="answerA"> Venus</p>
+        <p id = "answerQ">Which planet is closest to the sun?</p><p id ="answerA"> Mercury</p>
+        <p id = "answerQ">What is the term for a natural satellite?</p><p id ="answerA"> Moon</p>
+        <p id = "answerQ">Who was the first man in space?</p><p id ="answerA"> Yuri Gagarin</p>
+        <p id = "answerQ">Which is the largest planet in the solar system?</p> <p id ="answerA">Jupiter</p>
+        <p id = "answerQ">Which is the brightest comet in the solar system?</p><p id ="answerA"> Halley's Comet</p>
+        <p id = "answerQ">What would you find if you travelled to the centre of the solar system?</p><p id ="answerA">The sun</p>
+        <p id = "answerQ">How many planets are there in the solar system?</p><p id ="answerA"> Nine</p>
+        <p id = "answerQ">What shape is the Milky Way?</p><p id ="answerA">A spiral</p>
+        <p id = "answerQ">What force bends light rays travelling though the universe?</p><p id ="answerA">gravity</p>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.js">
+</script>
+        <script src="assets/javascript/questions.js">
+        </script>
+    <script src="assets/javascript/script.js">
+    </script>
+    
+</body>
+</html>
